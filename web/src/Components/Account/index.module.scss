@@ -1,0 +1,37 @@
+.Account {
+    border-radius: 2px;
+    background-color: #1d3557;
+    padding: 8px 12px;
+    box-shadow: 2px 2px 2px 2px #efefef;
+    text-align: center;
+    width: 168px;
+    min-height: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Hover {
+    box-shadow: 1px 1px 1px 1px #dadada, 2px 2px 2px 2px #efefef;
+    cursor: pointer;
+}
+
+.AccountRegister,
+.AccountLogin,
+.AccountEmail,
+.AccountLogout {
+    text-transform: uppercase;
+    color: #f3f3f3;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.AccountLogout,
+.AccountEmail {
+    margin: 4px 8px;
+}
+
+.AccountEmail {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

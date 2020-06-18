@@ -1,0 +1,66 @@
+$default-padding: 8px 12px;
+
+.Article {
+    display: flex;
+    align-items: center;
+    border: 1px solid #f1faee;
+    background-color: #fff;
+    box-shadow: 2px 2px 2px 2px #efefef;
+    border-radius: 5px;
+    margin: 8px 6px 10px 4px;
+}
+
+.ArticleUpvoter {
+    flex-shrink: 0;
+    padding: $default-padding;
+}
+
+.ArticleImage {
+    flex-shrink: 0;
+    object-fit: cover;
+    height: 60px;
+    width: 80px;
+    background-color: rgba(0,0,0,0.1);
+}
+
+.ArticleText {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    padding: $default-padding;
+}
+
+.ArticleLink {
+    align-self: flex-start;
+    font-size: 16px;
+    color: #457b9d;
+    text-decoration: none;
+    margin-bottom: 2px;
+
+    &:hover,
+    &:visited {
+        color: #1d3557;
+    }
+}
+
+.ArticleSmallText {
+    display: flex;
+}
+
+.ArticleSource {
+    align-self: flex-start;
+    font-size: 11px;
+    text-decoration: none;
+    color: #cfcfcf;
+
+    &:hover {
+        color: #afafaf;
+    }
+}
+
+.ArticlePublishedDate,
+.ArticlePublishedTime {
+    font-size: 11px;
+    color: #cfcfcf;
+    margin-left: 12px;
+}

@@ -1,0 +1,72 @@
+$font-size: 12px;
+$default-color: #457b9d;
+$upvoted-color: #1d3557;
+$disabled-color: #758e9e;
+
+.VoteButton {
+    display: flex;
+    align-items: center;
+    border: 0;
+    padding: 2px;
+    background-color: transparent;
+
+    &:hover {
+        cursor: pointer;
+
+        .VoteSvg path {
+            fill: $upvoted-color;
+        }
+
+        .VoteText {
+            color: $upvoted-color;
+        }
+    }
+}
+
+.HasVoted {
+    .VoteSvg path {
+        fill: #e63946;
+    }
+
+    .VoteText {
+        color: $upvoted-color;
+    }
+}
+
+.CantVote {
+    .VoteSvg path {
+        fill: $disabled-color;
+    }
+
+    .VoteText {
+        color: $disabled-color;
+    }
+
+    &:hover {
+        cursor: default;
+
+        .VoteSvg path {
+            fill: $disabled-color;
+        }
+
+        .VoteText {
+            color: $disabled-color;
+        }
+    }
+}
+
+.VoteSvg {
+    margin-left: 4px;
+    width: 16px;
+    height: 24px;
+
+    path {
+        fill: $default-color;
+    }
+}
+
+.VoteText {
+    font-size: $font-size;
+    color: $default-color;
+    width: 16px;
+}
